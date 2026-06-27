@@ -15,13 +15,22 @@ int main(){
         }
     }
     sort(input.begin(),input.end());
-
     int count =1,maxfreq=1;
     char mostfrequent = input[0];
     for(int i=0;i<input.size();i++){
         count=1;
-        if(input[i]==input[i-1]){
-            count++;
+         bool previous = false;
+        for(int k=0;k<i;k++){
+            if(input[i]==input[k]){
+                previous=true;
+            }
+        }
+        if(!previous){
+            for(int j=i+1;j<input.size();j++){
+                if(input[i]==input[j]){
+                    count++;
+                }
+        }
         }
         if(count>maxfreq){
             maxfreq=count;
