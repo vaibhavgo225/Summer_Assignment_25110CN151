@@ -4,7 +4,6 @@ using namespace std;
 
 int main(){
     string input,rotation;
-    int count=0,j;
     cout<< "Enter the string : ";
     getline(cin,input);
     cout<<"Enter the string to find if rotation : ";

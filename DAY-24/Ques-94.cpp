@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     string input;
-    int count=0,j;
+    int count=0;
     cout<< "Enter the string : ";
     getline(cin,input);
     string compressed = "";
