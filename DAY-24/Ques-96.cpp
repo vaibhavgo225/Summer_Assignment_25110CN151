@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 
 int main(){
@@ -18,6 +19,8 @@ int main(){
         for(int j=i+1;j<input.size();j++){
             if(input[i]==input[j]){
                 input[j]=input[j+1];
+                input.erase(j,1);
+                j--;
             }
         }
     }
