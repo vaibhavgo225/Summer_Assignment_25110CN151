@@ -1,9 +1,8 @@
 #include<iostream>
-#include<sstream>
 using namespace std;
 
 int main(){
-    string input,longest,word;
+    string input;
     cout<< "Enter the string : ";
     getline(cin,input);
 
